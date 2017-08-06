@@ -1,0 +1,11 @@
+<header>
+    <div class="navbar">
+        <a class="logo" title="Mercado Livre" href="http://localhost:3000/">
+            Mercado Livre
+        </a>
+        <form ngNoForm action="/items" class="navbar_form" method="GET">
+            <input placeholder="" value="" [(ngModel)]="query" name="search" type="text" class="input_form" />
+            <button type="submit" value=""> <i class="fa fa-search" aria-hidden="true"></i> </button>
+        </form>
+    </div>
+</header>

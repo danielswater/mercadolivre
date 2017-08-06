@@ -1,28 +1,29 @@
 # MercadoLivre
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+Teste para o processo seletivo do Mercado Livre atraves da consultoria Mootit, contato com Cecilia Monteiro
 
-## Development server
+## Dependências
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O teste aplicado foi desenvolvido com:
+Angular 2 CLI
+Node: 6.11.2
+Typescript 2.4.2
+npm: 3.10.10
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Execução 
+1 - Verificar se possui o Angular CLI, caso não tenha, usar o comando: npm install -g @angular/cli@latest
+2 - Após instalado, executar o comando: npm install
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Para executar o teste, usar o comando: ng build
+Após compilado, usar a seguinte url: http://localhost:3000/
 
-## Running unit tests
+## OBSERVAÇÕES
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1 - O teste em nenhum momento pede SPA
+2 - O teste pede que se use query string
+3 - O JSON retornado pelas endpoints, não podem ser consumidos de acordo com o teste, pelo fato do teste proposto estar desatualizado perante a API
+4 - Não foi possível exibir os detalhes do produto selecionado, pois na API fornecida nao consta essa chave
+5 - As imagens, só foi possível resgatar o thumb, e para seguir de acordo com o teste proposto, foi preciso modificar o tamanho, e a consequencia foi a perda de resolução
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

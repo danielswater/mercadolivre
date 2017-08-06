@@ -1,0 +1,13 @@
+<nav-search></nav-search>
+<section class="container">
+    <div class="product-image">
+        <img src="{{item.thumbnail}}"/>
+    </div>
+    <div class="info-details">
+        <h3>{{ item.title }}</h3>
+        <h2>{{ item.price | currency:'ARS':true }}</h2>
+         <button type="button">Comprar</button>
+    </div>
+        <!-- Consulta da API não traz o resultado esperado -->
+        <div class="description" [innerHTML]="item.description.text"></div>   
+</section>

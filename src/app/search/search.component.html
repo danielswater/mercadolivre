@@ -1,0 +1,13 @@
+<nav-search></nav-search>
+
+<section *ngIf="search" class="container">
+    <div class="items-products" *ngFor="let item of items">
+        <div class="thumb">
+            <a [routerLink]="['/items', item.id]" title="{{item.title}}" ><img src="{{item.thumbnail}}"/></a>
+        </div>
+        <div class="info">
+            <h1><a [routerLink]="['/items', item.id]">{{ item.price | currency:'ARS':true }}</a></h1>
+            <p>{{ item.title }}</p>
+        </div>
+    </div>
+</section>
