@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
-import { NavSearchComponent } from './navsearch/navsearch.component';
-import { SearchComponent } from './search/search.component';
-import { DetailsComponent } from './details/details.component';
+import { NavSearchComponent } from './navsearch-component/navsearch.component';
+import { SearchComponent } from './search-component/search.component';
+import { DetailsComponent } from './details-component/details.component';
 
 const app_routes: Routes = [
 	{ path: '', component: SearchComponent },
